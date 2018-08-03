@@ -1,0 +1,184 @@
+@font-face{font-family:BMWTypeWebBoldAll;src:url('../fonts/BMWTypeWebBoldAll.20161018.ttf');font-weight:200;}
+.cancel-upload{display:none!important;}
+body{font-family:Arial,"Helvetica","Roboto","sans-serif";color:#262626;font-size:14px;background-color:#FFF;position:relative;min-height:100%;height:auto !important;width:100%;padding:0;}
+.addition_data{line-height:17px;}
+.slick-slide{outline:none!important;}
+.btn_type_1{width:286px;display:inline-block;padding:11px 20px;min-height:40px;background-color:#1c69d4;color:#fff;text-decoration:none!important;font-family:"BMWTypeWebBoldAll";font-size:14px;line-height:17px;text-align:center;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-ms-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;}
+.btn_type_1:hover{background-color:#0653b6;color:#FFF;}
+.btn_type_2{width:286px;display:inline-block;padding:11px 20px;min-height:40px;background-color:#666;color:#fff;text-decoration:none!important;font-family:"BMWTypeWebBoldAll";font-size:14px;line-height:17px;text-align:center;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-ms-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;}
+.btn_type_2:hover{background-color:#4d4d4d;color:#FFF;}
+.addition_slider{margin:0 -7px;}
+.addition_slider_outer{position:relative;padding-bottom:10px;}
+.addition_slider_outer .slick_navigation{margin-bottom:0;overflow:hidden;height:5px;width:100%;position:absolute;left:0;right:0;bottom:0px;}
+.addition_slider_outer .slick_page{position:absolute;top:0;left:0;height:0px;border-top:5px solid #0653B6;transition:all .35s ease;}
+.addition_slider_outer .slick_top_navigation{position:relative;overflow:hidden;width:100%;font-size:0;margin:0 -3px 5px;}
+.addition_slider_outer .slick_top_page{display:inline-block;padding:0 3px;cursor:pointer;vertical-align:bottom;}
+.addition_slider_outer .slick_top_border{height:0px;border-top:5px solid #e6e6e6;}
+.addition_slider_outer .slider_paginate_a{font-family:"BMWTypeWebBoldAll",Arial,Helvetica,sans-serif;font-size:14px;line-height:17px;color:#666;text-decoration:none!important;}
+.addition_slider_outer .slick_top_page.active .slick_top_border{border-color:#1C69D4;}
+.addition_slider_outer .slick_top_page.active .slider_paginate_a{color:#1C69D4;}
+.addition_slider_outer .slick_top_page:hover .slick_top_border{border-color:#0653B6;}
+.addition_slider_outer .slick_top_page:hover .slider_paginate_a{color:#0653B6;}
+.addition_slider_outer .wide_slider{z-index:0;width:100%;overflow:hidden;}
+.addition_slider_outer.inside .slick-next{width:40px;height:40px;background-color:rgba(0, 0, 0, 0.4);right:7px;transition:all .25s ease;z-index:999;opacity:0;}
+.addition_slider_outer.inside .slick-prev{width:40px;height:40px;background-color:rgba(0, 0, 0, 0.4);left:7px;transition:all .25s ease;z-index:999;opacity:0;}
+.addition_slider_outer.inside{overflow:hidden;}
+.addition_slider_outer.outside .slick-next{width:40px;height:40px;background-color:rgba(0, 0, 0, 0.4);right:-47px;transition:all .25s ease;z-index:999;opacity:0.7;}
+.addition_slider_outer.outside .slick-prev{width:40px;height:40px;background-color:rgba(0, 0, 0, 0.4);left:-47px;transition:all .25s ease;z-index:999;opacity:0.7;}
+.addition_slider_outer:hover .slick-next, .addition_slider_outer:hover .slick-prev{opacity:1;}
+.addition_slider_outer .slick-next:hover, .addition_slider_outer .slick-prev:hover{background-color:#4D4D4D;}
+.addition_slider_outer .slick-next:before{display:inline-block;vertical-align:middle;content:'';background-image:url('../img/slick_next.svg');width:40px;height:40px;background-position:1px 0px;}
+.addition_slider_outer .slick-prev:before{display:inline-block;vertical-align:middle;content:'';background-image:url('../img/slick_prev.svg');width:40px;height:40px;background-position:-1px 0px;}
+.addition_gallery_outer .slick_navigation{position:relative;margin-top:5px;margin-bottom:0;overflow:hidden;height:5px;width:100%;}
+.addition_gallery_outer .slick_page{position:absolute;top:0;left:0;height:0px;border-top:5px solid #0653B6;transition:all .35s ease;}
+.addition_gallery_outer .slick-next{right:0px;height:85%;transform: translate(0);top:0;width:14%;transition:all .25s ease;z-index:999;opacity:0;}
+/*.addition_gallery_outer .slick-next{right:0px;height:100%;bottom:0;width:14%;transition:all .25s ease;z-index:999;opacity:0;}*/
+/*.addition_gallery_outer .slick-prev{left:0px;height:100%;bottom:0;width:14%;transition:all .25s ease;z-index:999;opacity:0;}*/
+.addition_gallery_outer .slick-prev{left:0px;height:85%;transform: translate(0);top:0;width:14%;transition:all .25s ease;z-index:999;opacity:0;}
+.addition_gallery_outer:hover .slick-next, .addition_gallery_outer:hover .slick-prev{opacity:1;}
+.addition_gallery_outer .slick-next:before{position:absolute;right:0;top:50%;margin-top:-20px;background-color:rgba(0, 0, 0, 0.4);width:40px;height:40px;display:inline-block;vertical-align:middle;content:'';background-image:url('../img/slick_next.svg');background-position:1px 0px;}
+.addition_gallery_outer .slick-prev:before{position:absolute;left:0;top:50%;margin-top:-20px;background-color:rgba(0, 0, 0, 0.4);width:40px;height:40px;display:inline-block;vertical-align:middle;content:'';background-image:url('../img/slick_prev.svg');background-position:-1px 0px;}
+.addition_gallery_outer .slick-next:hover:before{background-color:#4D4D4D;}
+.addition_gallery_outer .slick-prev:hover:before{background-color:#4D4D4D;}
+.addition_gallery_thin_container{padding:0 3px;}
+.addition_gallery_wide_container{padding:0 17px;}
+.addition_gallery_item{padding:0 5px;position:relative;}
+.addition_gallery_image{position:relative;z-index:1;}
+.addition_gallery_more{position:absolute;bottom:0;right:5px;display:none;width:40px;height:40px;background-color:#1c69d4;transition:all .25s ease;z-index:5;}
+.addition_gallery_more:hover{background-color:#0653B6;}
+.addition_gallery_item.slick-active .addition_gallery_more{display:block;}
+.addition_gallery_more:before{position:absolute;top:0;left:0;content:'';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2245%22%20viewBox%3D%220%200%2045%2045%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M32%2029.75l-5.417-5.416c1.823-2.852%201.458-6.65-1-9.174-2.75-2.826-7.545-2.88-10.424%200-2.88%202.88-2.88%207.545%200%2010.424%202.49%202.492%206.32%202.822%209.173%201L29.75%2032%2032%2029.75zm-14.937-6.07c-1.827-1.828-1.827-4.79%200-6.617s4.79-1.827%206.616%200%201.826%204.79%200%206.616c-1.828%201.826-4.79%201.826-6.617%200z%22%2F%3E%3C%2Fsvg%3E");height:40px;width:40px;background-position:-1px -1px;}
+.addition_gallery_item{cursor:pointer;}
+.gallery_modal .modal-dialog{margin-top:100px;background-color:#FFF;overflow:hidden;}
+.gallery_modal .modal-content{border-radius:0;margin:15px 15px 35px;overflow:hidden;box-shadow:none;border:none;}
+.gallery_modal .gallery_modal_close{position:absolute;top:0;right:0;display:inline-block;width:20px;height:20px;background-color:#1c69d4;transition:all .25s ease;z-index:5;}
+.gallery_modal .gallery_modal_close:hover{background-color:#0653B6;}
+.gallery_modal .gallery_modal_close:before{position:absolute;top:0;left:0;content:'';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M15%206.25L13.75%205%2010%208.75%206.25%205%205%206.25%208.75%2010%205%2013.75%206.25%2015%2010%2011.25%2013.75%2015%2015%2013.75%2011.25%2010z%22%2F%3E%3C%2Fsvg%3E");height:20px;width:20px;background-position:0px 0px;}
+.addition_slider_slide{padding:0 7px;}
+.addition_double_image{font-size:0;}
+.addition_double_image_item{padding:0 5px;width:50%;display:inline-block;}
+.spoiler-top-line{display:block;height:0;border-top:1px solid #e6e6e6;margin-bottom:10px;margin-top:-1px;}
+.spoiler-bottom-line{display:block;height:0;border-bottom:1px solid #e6e6e6;margin-top:10px;}
+.spoiler_toggler{position:relative;display:block;margin-right:7px;margin-bottom:12px;min-width:40px;height:40px;padding:12px 0 0 50px;font-family:"BMWTypeWebBoldAll";color:#262626;text-decoration:none!important;}
+.spoiler_toggler:hover, .spoiler_toggler:focus{color:#262626;}
+.spoiler_toggler:before{position:absolute;top:0;left:0;content:'';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M28%2018h-6v-6h-4v6h-6v4h6v6h4v-6h6z%22%2F%3E%3C%2Fsvg%3E");width:40px;height:40px;background-position:0px 0px;transition:all .25s ease;background-color:#1c69d4;}
+.spoiler_toggler:after{position:absolute;top:0;left:0;content:'';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M12%2018h16v4H12z%22%2F%3E%3C%2Fsvg%3E");width:40px;height:40px;background-position:0px 0px;transition:all .25s ease;opacity:0;background-color:#1c69d4;}
+.spoiler_toggler.opened:before{opacity:0;}
+.spoiler_toggler.opened:after{opacity:1;}
+.spoiler_toggler:hover:before{background-color:#0653b6;}
+.spoiler_toggler:hover:after{background-color:#0653b6;}
+.spoiler_body{padding-left:50px}
+.addition_center_text_text_title{font-size:124.8px;max-width:100%;display:block;line-height:1;text-align:left;font-family:"BMWTypeWebBoldAll";}
+.addition_center_text_text{font-size:14px;text-align:left;}
+.addition-banners-item{width:40%;padding:0 8px;}
+.addition-banners-inner{margin:0 -8px;}
+.addition-banner{overflow:hidden;}
+.addition_banners_a{font-size:14px;background-color:#E6E6E6;height:60px;padding:10px 15px;text-align:left;}
+.simple_text_a{color:#666;font-family:"BMWTypeWebBoldAll";font-size:14px;line-height:20px;transition:all .25s ease;position:relative;padding-left:12px;}
+.simple_text_a:hover, .simple_text_a:focus{color:#0653B6;text-decoration:none;}
+.simple_text_a:before{content:' ';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");position:absolute;width:20px;height:20px;background-position:-3px -5px;background-size:30px;top:-1px;left:-8px;transition:all .25s ease;opacity:1;background-repeat:no-repeat;}
+.simple_text_a:after{content:' ';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%230653B6%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");position:absolute;width:20px;height:20px;background-position:-3px -5px;background-size:30px;top:-1px;left:-8px;transition:all .25s ease;opacity:0;background-repeat:no-repeat;}
+.simple_text_a:hover:before{opacity:0;}
+.simple_text_a:hover:after{opacity:1;}
+table.table td{padding-top:8px;padding-left:0px!important;padding-right:0px!important;padding-bottom:8px;border-top:none!important;border-bottom:1px solid #e6e6e6;}
+table.table tbody tr:first-child td{padding-top:0;}
+table.table tbody tr:last-child td{border:none!important;}
+table.table p{margin:0;}
+.addition_carousel_outer .slick-next{width:40px;height:40px;background-color:rgba(0, 0, 0, 0.4);right:-47px;transition:all .25s ease;z-index:999;opacity:0.7;}
+.addition_carousel_outer .slick-prev{width:40px;height:40px;background-color:rgba(0, 0, 0, 0.4);left:-47px;transition:all .25s ease;z-index:999;opacity:0.7;}
+.addition_carousel_outer:hover .slick-next, .addition_carousel_outer:hover .slick-prev{opacity:1;}
+.addition_carousel_outer .slick-next:hover, .addition_carousel_outer .slick-prev:hover{background-color:#4D4D4D;}
+.addition_carousel_outer .slick-next:before{display:inline-block;vertical-align:middle;content:'';background-image:url('../img/slick_next.svg');width:40px;height:40px;background-position:1px 0px;}
+.addition_carousel_outer .slick-prev:before{display:inline-block;vertical-align:middle;content:'';background-image:url('../img/slick_prev.svg');width:40px;height:40px;background-position:-1px 0px;}
+.addition_slide_inner{width:100%;padding:1%;}
+.addition_slide_inner{transition:all .55s ease;}
+.addition_slide{display:flex;align-items:center;justify-content:flex-start;}
+.addition_slide.left{justify-content:flex-end;}
+.addition_slide.right{justify-content:flex-start;}
+.addition_slide.left .addition_slide_inner{width:47%;}
+.addition_slide.right .addition_slide_inner{width:47%;}
+.addition_carousel_capture{padding:0 267px;}
+.addition_carousel_capture_block .slick-prev, .addition_carousel_capture_block .slick-next{display:none!important;}
+.addition_carousel_capture_block .row{margin-right:-7px;margin-left:-7px;}
+.addition_carousel_capture_block .col-xs-6{padding-right:7px;padding-left:7px;}
+.modal_video .modal-dialog{margin-top:100px;background-color:#FFF;overflow:hidden;}
+.modal_video .modal-content{border-radius:0;margin:15px 15px 35px;overflow:hidden;box-shadow:none;border:none;}
+.modal_video .modal_video_close{position:absolute;top:0;right:0;display:inline-block;width:20px;height:20px;background-color:#1c69d4;transition:all .25s ease;z-index:5;}
+.modal_video .modal_video_close:hover{background-color:#0653B6;}
+.modal_video .modal_video_close:before{position:absolute;top:0;left:0;content:'';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M15%206.25L13.75%205%2010%208.75%206.25%205%205%206.25%208.75%2010%205%2013.75%206.25%2015%2010%2011.25%2013.75%2015%2015%2013.75%2011.25%2010z%22%2F%3E%3C%2Fsvg%3E");height:20px;width:20px;background-position:0px 0px;}
+.addition_gallery_video{padding:0 4px;position:relative;}
+.addition_video{text-align:center;}
+.addition_video_inner{max-height:100%;max-width:100%;display:inline-block;position:relative;}
+.addition_video video{max-height:100%;max-width:100%;width:890px;position:relative;z-index:9;}
+.addition_gallery_play{position:absolute;z-index:10;width:60px;height:60px;top:50%;left:50%;margin-top:-45px;margin-left:-30px;transition:all .25s ease;background-color:#1c69d4;cursor:pointer;}
+.addition_gallery_play:hover{background-color:#0653B6;}
+.addition_gallery_play:before{content:' ';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M22%2018l18%2012-18%2012z%22%2F%3E%3C%2Fsvg%3E");position:absolute;width:60px;height:60px;background-position:0px 0px;background-size:60px;left:0px;background-repeat:no-repeat;}
+a.info{display:inline-block;width:30px;height:30px;content:"";position:relative;font-size:0;font-size:0;vertical-align:middle;margin:0 10px;}
+a.info:before{position:absolute;top:5px;left:5px;content:'';background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22%231D69D4%22%20d%3D%22M8%200C3.584%200%200%203.582%200%208s3.583%208%208%208%208-3.582%208-8c.002-4.418-3.58-8-8-8zm1%2013H7V7h2v6zm0-8H7V3h2v2z%22%2F%3E%3C%2Fsvg%3E");height:20px;width:17px;height:17px;background-position:0px 0px;background-repeat:no-repeat;}
+.tooltip-arrow{border-color:#FFF!important;}
+.tooltip-inner{background-color:#FFF;color:#262626;font-size:15px;border-radius:0;padding:30px 20px;line-height:17px;opacity:1!important;border:1px solid #e6e6e6; text-align: left;letter-spacing: 0px;}
+.tooltip{opacity:1!important;}
+.addition_text_with_left_photo_img {margin-top: 20px;}
+.addition_text_with_right_photo_img {margin-top: 20px;}
+.addition_grid_item_title_1 {display: block;font-family:"BMWTypeWebBoldAll",Arial,Helvetica,sans-serif;font-size: 18px;font-style: normal;font-weight: normal;padding: 0px;text-align: center;width: 100%;margin:5px 0 0;}
+.addition_grid_item_title_2 {display: block;font-family:Arial,Helvetica,sans-serif;font-size: 14px;font-style: normal;font-weight: normal;padding: 0px;text-align: center;width: 100%;margin:3px 0 0;}
+.addition_grid_item_title_3 {display: block;font-family:"BMWTypeWebBoldAll",Arial,Helvetica,sans-serif;font-size: 14px;font-style: normal;font-weight: normal;padding: 0px;text-align: center;width: 100%;margin:0;}
+.addition_grid_item_a { position: relative;margin-top:20px; }
+.addition_grid_item_info {background: url(../img/info-icon.png) center center;display: none;width: 30px;height: 30px;position: absolute;top: 50%;left: 50%;margin-left: -15px;margin-top: -15px; }
+.addition_grid_item_a:hover .addition_grid_item_info {display:block;}
+
+.addition_center_list_inner { text-align: left; border-left: 2px solid rgb(187, 187, 187); padding: 50px 0 70px; }
+.addition_center_list_title { margin-bottom:18px!important; border-left: 15px solid rgb(187, 187, 187); padding: 20px 0 0 32px; margin-left: -15px; }
+.addition_center_list_item_title {font-family: "bmwTypeWebBoldAll","Arial","Helvetica",sans-serif;letter-spacing: 0; border-bottom: 1px solid rgb(187, 187, 187);padding:3px 0 10px 0; margin-left: 30px; display: flex;}
+.addition_center_list_item_iterator { margin-right: 12px;color: rgb(77, 77, 77);}
+    
+@media (max-width:767px){.addition_data h1{font-size:24px;line-height:24px;letter-spacing:-1.59px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-transform:uppercase;text-align:left;}
+.addition_data h2{font-size:18px;line-height:18px;letter-spacing:-1.05px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition_data h3{font-size:12px;line-height:12px;letter-spacing:-0.75px;margin-top:17px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition_data h4{font-size:12px;line-height:12px;letter-spacing:-0.65px;margin-top:0px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition_data h5{font-size:12px;line-height:12px;letter-spacing:-0.65px;margin-top:18px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition-banners-item{width:100%;padding:8px 0;}
+.addition_element_with_button_info{position:relative!important;}
+.addition_element_with_button_padding{padding-left:15px!important;padding-right:15px!important;}
+.addition_image_info{position:relative!important;}
+.addition_image_info_padding{padding-left:15px!important;padding-right:15px!important;}
+.addition_carousel_outer .slick-next{right:10px;}
+.addition_carousel_outer .slick-prev{left:10px;}
+.addition_carousel_capture{padding:0 0;}
+.slick_top_page { display: none!important; }
+.slick_top_page.active { display: block!important; width: 100%!important; }
+.slick-arrow.lick-next { right: 0px; }
+.slick-arrow.lick-prev { left: 0px; }
+.addition_slider_outer.outside .slick-next{right:0px!important}
+.addition_slider_outer.outside .slick-prev{left:0px!important;}
+.addition_center_list_item_title {font-size: 14px;line-height: 18px;}
+}
+@media (min-width:768px) and (max-width:991px){.addition_data h1{font-size:35px;line-height:35px;letter-spacing:-1.59px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-transform:uppercase;text-align:left;}
+.addition_data h2{font-size:25px;line-height:25px;letter-spacing:-1.05px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition_data h3{font-size:18px;line-height:18px;letter-spacing:-0.75px;margin-top:17px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition_data h4{font-size:20px;line-height:20px;letter-spacing:-0.65px;margin-top:0px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition_data h5{font-size:20px;line-height:20px;letter-spacing:-0.65px;margin-top:18px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626!important;text-align:left;}
+.addition-banners-item{width:100%;padding:8px 0;}
+.addition_element_with_button_info{position:relative!important;}
+.addition_element_with_button_padding{padding-left:15px!important;padding-right:15px!important;}
+.addition_image_info{position:relative!important;}
+.addition_image_info_padding{padding-left:15px!important;padding-right:15px!important;}
+.addition_carousel_capture{padding:0 0;}
+.addition_center_list_item_title {font-size: 16px;line-height: 20px;}
+}
+@media (min-width:992px){.addition_data h1{font-size:40px;line-height:40px;letter-spacing:-1.59px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-transform:uppercase;text-align:left;}
+.addition_data h2{font-size:30px;line-height:30px;letter-spacing:-1.05px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_data h3{font-size:20px;line-height:20px;letter-spacing:-0.75px;margin-top:17px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_data h4{font-size:16px;line-height:16px;letter-spacing:-0.65px;margin-top:0px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_data h5{font-size:16px;line-height:16px;letter-spacing:-0.65px;margin-top:18px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition-banners-item{width:40%;padding:0 8px;}
+.addition_center_list_item_title {font-size: 16px;line-height: 20px;}
+}
+@media (max-width:1200px){}
+@media (min-width:1200px){.addition_data h1{font-size:48px;line-height:48px;letter-spacing:-1.59px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-transform:uppercase;text-align:left;}
+.addition_data h2{font-size:35px;line-height:35px;letter-spacing:-1.05px;margin-top:15px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_data h3{font-size:25px;line-height:25px;letter-spacing:-0.75px;margin-top:17px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_data h4{font-size:20px;line-height:20px;letter-spacing:-0.65px;margin-top:0px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_data h5{font-size:20px;line-height:20px;letter-spacing:-0.65px;margin-top:18px;margin-bottom:12px;font-family:"BMWTypeWebBoldAll";color:#262626;text-align:left;}
+.addition_center_list_item_title {font-size: 18px;line-height: 20px;}
+}
