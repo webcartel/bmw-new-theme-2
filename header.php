@@ -422,6 +422,24 @@
 					</ul>
 					<a class='bmw_btn test-drive-btn' href='test-drive#18'>Tест-драйв</a>
 				</div>
+				<?php
+					$my_wp_query = new WP_Query();
+					$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+					$page_childrens = get_page_children( get_post()->ID, $all_wp_pages );
+					if ( count($page_childrens) <= 0 ) {
+						$ancestors = get_ancestors( get_post()->ID, 'page' );
+						$page_childrens = get_page_children( $ancestors[0], $all_wp_pages );
+					}
+				?>
+				<div class='simple_menu'>
+					<a class='simple_menu_opener' onclick="return false;" href='#'><?php echo get_post()->post_title; ?></a>
+					<ul class='simple_menu_ul'>
+					<?php foreach ($page_childrens as $page_children) { ?>
+						<li><a class='simple_menu_a' data-alias='<?php echo $page_children->post_name; ?>' href="<?php echo $page_children->post_name; ?>"><?php echo $page_children->post_title; ?></a></li>
+					<?php } ?>
+					</ul>
+				</div>
+				<!--
 				<div class='simple_menu'>
 					<a class='simple_menu_opener' onclick="return false;" href='#'>BMW 2 серии Купе</a>
 					<ul class='simple_menu_ul'>
@@ -439,6 +457,7 @@
 						<li><a class='simple_menu_a' data-alias='specifications_eY' href="bmw-218i-coupe">Технические характеристики</a></li>
 					</ul>
 				</div>
+				-->
 			</div>
 		</div>
 		<div class='search_container'>
