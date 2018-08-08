@@ -423,8 +423,8 @@
 					<a class='bmw_btn test-drive-btn' href='test-drive#18'>Tест-драйв</a>
 				</div>
 				<?php
-					$my_wp_query = new WP_Query();
-					$all_wp_pages = $my_wp_query->query(array('post_type' => 'page'));
+					global $wpdb;
+					$all_wp_pages = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page"' );
 					$page_childrens = get_page_children( get_post()->ID, $all_wp_pages );
 					if ( count($page_childrens) <= 0 ) {
 						$ancestors = get_ancestors( get_post()->ID, 'page' );
