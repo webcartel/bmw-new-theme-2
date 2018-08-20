@@ -423,17 +423,37 @@
 					<a class='bmw_btn test-drive-btn' href='test-drive#18'>Tест-драйв</a>
 				</div>
 				<?php
+					// global $wpdb;
+					// $all_wp_pages = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page"' );
+					// $page_childrens = get_page_children( get_post()->ID, $all_wp_pages );
+					// if ( count($page_childrens) <= 0 ) {
+					// 	$ancestors = get_ancestors( get_post()->ID, 'page' );
+					// 	$page_childrens = get_page_children( $ancestors[0], $all_wp_pages );
+					// }
+
 					global $wpdb;
-					$all_wp_pages = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page"' );
-					$page_childrens = get_page_children( get_post()->ID, $all_wp_pages );
-					if ( count($page_childrens) <= 0 ) {
-						$ancestors = get_ancestors( get_post()->ID, 'page' );
-						$page_childrens = get_page_children( $ancestors[0], $all_wp_pages );
+					$page_childrens = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `post_parent`= "'.get_post()->ID.'"' );
+					$ancestors = get_ancestors( get_post()->ID, 'page' );
+					$model_title = get_post()->post_title;
+					$model_slug = get_post()->post_name;
+
+					if ( count($page_childrens) <= 0 || count($ancestors) === 1 ) {
+						$page_childrens = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `post_parent`= "'.$ancestors[0].'"' );
+						$model = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[0].'"' );
+						$model_title = $model[0]->post_title;
+						$model_slug = $model[0]->post_name;
+					}
+					if ( count($page_childrens) <= 0 || count($ancestors) === 2 ) {
+						// $page_childrens = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[1].'"' );
+						// $model = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[1].'"' );
+						// $model_title = $model[0]->post_title;
+						// $model_slug = $model[0]->post_name;
 					}
 				?>
 				<div class='simple_menu'>
-					<a class='simple_menu_opener' onclick="return false;" href='#'><?php echo get_post()->post_title; ?></a>
+					<a class='simple_menu_opener' onclick="return false;" href='#'><?php echo $model_title; ?></a>
 					<ul class='simple_menu_ul'>
+						<li><a href="/<?php echo $model_slug; ?>">Узнать больше</a></li>
 					<?php foreach ($page_childrens as $page_children) { ?>
 						<li><a class='simple_menu_a' data-alias='<?php echo $page_children->post_name; ?>' href="<?php echo $page_children->post_name; ?>"><?php echo $page_children->post_title; ?></a></li>
 					<?php } ?>

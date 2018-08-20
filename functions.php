@@ -4,6 +4,8 @@ add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form'
 
 remove_filter( 'the_content', 'wpautop' );
 
+add_theme_support( 'menus' );
+
 function bmw_css() {
 	wp_enqueue_style( 'bmw_normalize', get_stylesheet_directory_uri() . '/assets/css/normalize.css', array(), '1.0.0' );
 	wp_enqueue_style( 'bmw_bootstrap_css', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0.0' );
