@@ -444,10 +444,10 @@
 						$model_slug = $model[0]->post_name;
 					}
 					if ( count($page_childrens) <= 0 || count($ancestors) === 2 ) {
-						// $page_childrens = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[1].'"' );
-						// $model = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[1].'"' );
-						// $model_title = $model[0]->post_title;
-						// $model_slug = $model[0]->post_name;
+						$page_childrens = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[1].'"' );
+						$model = $wpdb->get_results( 'SELECT *  FROM `'.$wpdb->posts.'` WHERE `post_status` LIKE "publish" AND `post_type` LIKE "page" AND `ID`= "'.$ancestors[1].'"' );
+						$model_title = $model[0]->post_title;
+						$model_slug = $model[0]->post_name;
 					}
 				?>
 				<div class='simple_menu'>
