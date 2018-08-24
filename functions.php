@@ -36,3 +36,11 @@ function bmw_js() {
 }
 add_action( 'wp_enqueue_scripts', 'bmw_js' );
 
+
+
+add_shortcode( 'bmw_page_url', 'bmw_page_url' );
+function bmw_page_url()
+{
+	$url = get_site_url().'/'.get_page_uri(get_the_ID());
+	return $url;
+}
